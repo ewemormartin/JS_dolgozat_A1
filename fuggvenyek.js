@@ -31,7 +31,8 @@ export function megmutat(lista) {
     GOMB_ELEM.addEventListener("click", function () {
       KIVALASZTVA.pop();
       let randomSzam = Math.floor(Math.random() * lista.length);
-      let txt = `<li>${lista[randomSzam].nev}; ${lista[randomSzam].leiras}</li>`;
+      let txt = `<li>${lista[randomSzam].nev}<br> 
+                    ${lista[randomSzam].leiras}</li>`;
       KIVALASZTOTT_ELEM.innerHTML = txt;
       KIVALASZTVA.push(randomSzam);
     });
